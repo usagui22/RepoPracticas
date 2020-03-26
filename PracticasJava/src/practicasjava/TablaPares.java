@@ -31,13 +31,22 @@ class TablaPares {
     }
     public int Tabla(int mdor){
         int valor = -1;        
-        if(mdor>0){            
-            for(int mando =1;mando <= 10;mando++){
-                valor = mdor * mando;                
+        if(mdor>0){ 
+            int mando2 = 1;
+            while(mando2 <=100){
+            valor = mdor * mando2;
+            if(numeroPar(valor))
+            System.out.println(mdor + " * "+ mando2+ " = "+ valor);
+            mando2=mando2+1;
+            }
+            
+            /*for(int mando =1;mando <= 100;mando++){
+                valor = mdor * mando;  
+                System.out.println(mdor + " * "+ mando + " = " + valor);
                 if(numeroPar(valor)==true){
                     return valor;
                 }
-            }
+            }**/
         }
         return valor;
     }
