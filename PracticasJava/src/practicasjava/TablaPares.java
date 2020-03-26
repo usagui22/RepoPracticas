@@ -20,35 +20,22 @@ class TablaPares {
     public void GenerarTabla(){
         if(numInicial>0){
             if(numLimite>0){
-                int m = -1;
                 for(int a = numInicial; a<= numLimite ;a++){
-                m = Tabla(a);
-                System.out.println(m);
+                Tabla(a);                
                 }
                     
             }
         }
     }
-    public int Tabla(int mdor){
-        int valor = -1;        
-        if(mdor>0){ 
-            int mando2 = 1;
-            while(mando2 <=100){
-            valor = mdor * mando2;
-            if(numeroPar(valor))
-            System.out.println(mdor + " * "+ mando2+ " = "+ valor);
-            mando2=mando2+1;
+    public void Tabla(int mdor){
+        int valor = -3;        
+        int mando2 = 1;
+            while(mando2 <=100 ){
+                valor = mdor * mando2;
+                if(numeroPar(valor))
+                System.out.println(valor);
+                mando2=mando2+1;
             }
-            
-            /*for(int mando =1;mando <= 100;mando++){
-                valor = mdor * mando;  
-                System.out.println(mdor + " * "+ mando + " = " + valor);
-                if(numeroPar(valor)==true){
-                    return valor;
-                }
-            }**/
-        }
-        return valor;
     }
     
     public boolean numeroPar(int x){
