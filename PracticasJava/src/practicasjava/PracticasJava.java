@@ -15,7 +15,7 @@ public class PracticasJava {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        TablaPares tp = new TablaPares(1,5);
+        TablaPares tp = new TablaPares(1,100);
         tp.GenerarTabla();
     }
     
