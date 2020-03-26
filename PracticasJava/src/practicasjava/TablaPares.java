@@ -21,7 +21,7 @@ class TablaPares {
         if(numInicial>0){
             if(numLimite>0){
                 int m = -1;
-                for(int a = numInicial; a<= 100 ;a++){
+                for(int a = numInicial; a<= numLimite ;a++){
                 m = Tabla(a);
                 System.out.println(m);
                 }
