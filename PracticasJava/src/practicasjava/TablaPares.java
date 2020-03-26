@@ -12,6 +12,7 @@ package practicasjava;
 class TablaPares {
     private int numInicial;
     private int numLimite;
+    
     public TablaPares(int ni, int nf){
         numInicial = ni;
         numLimite = nf;
@@ -19,20 +20,20 @@ class TablaPares {
     public void GenerarTabla(){
         if(numInicial>0){
             if(numLimite>0){
-                while(numInicial>=numLimite){
-                    for(int a = numInicial; a<=numLimite;a++){
-                    int m = Tabla(a);
-                    System.out.println(m);
-                    }
+                int m = -1;
+                for(int a = numInicial; a<= numLimite*10 ;a++){
+                m = Tabla(a);
+                System.out.println(m);
                 }
+                    
             }
         }
     }
-    public int Tabla(int numero){
-        int valor = -1;
-        while(numero>0){
-            for(int c=0;c>=0;c++){
-                valor = numero * c;
+    public int Tabla(int mdor){
+        int valor = -1;        
+        if(mdor>0){            
+            for(int mando =1;mando <= 10;mando++){
+                valor = mdor * mando;                
                 if(numeroPar(valor)==true){
                     return valor;
                 }
@@ -40,10 +41,11 @@ class TablaPares {
         }
         return valor;
     }
+    
     public boolean numeroPar(int x){
         boolean par = false;
         int r = x%2;
-        if(r == 1){
+        if(r == 0){
             par = true;
         }
         return par;
