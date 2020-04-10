@@ -46,9 +46,10 @@ programación Java.
 
 ### Que Archivos Se Tiene Hasta El Momento
 
-- carpeta "PracticasJava"
-- archivo README
-
+- carpeta "PracticasJava" | Status: Complet 
+- archivo README	| Status: Modified
+- carpeta "CollectionsAndArrays" |Status: In Progress
+- carpeta "TicTacToe" | Status: In Progress
         
 
 
