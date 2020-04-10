@@ -19,12 +19,15 @@ public class CollectionsAndArrays {
     public static void main(String[] args) {
         Pelicula pUno = new Pelicula("Duro de matar");
         Pelicula pDos = new Pelicula("Arma Mortal");
-        mostrarLista(pUno);
-        mostrarLista(pDos);
+        String inside = "";
+        inside = pUno.getName();
+        mostrarLista(inside);
+        inside = pDos.getName();
+        mostrarLista(inside);
     }
-    public static void mostrarLista(Pelicula p){
-        ArrayList<Pelicula> coleccion = new ArrayList<Pelicula>();
-        coleccion.add(p);
+    public static void mostrarLista(String nameIn){
+        ArrayList<String> coleccion = new ArrayList<String>();
+        coleccion.add(nameIn);
         System.out.println(coleccion);
     }
 }
