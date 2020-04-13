@@ -5,6 +5,8 @@
  */
 package collectionsandarrays;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Usagui
@@ -21,5 +23,10 @@ public class Pelicula {
     }
     public String getName(){
         return name;
+    }
+    
+    public void CrearLista(String n){
+        ArrayList<String> lista = new ArrayList<String>();
+        
     }
 }

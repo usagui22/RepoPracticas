@@ -24,6 +24,9 @@ public class CollectionsAndArrays {
         mostrarLista(inside);
         inside = pDos.getName();
         mostrarLista(inside);
+        ListaNumeros otraLista = new ListaNumeros(1,100);
+        otraLista.tour();        
+        
     }
     public static void mostrarLista(String nameIn){
         ArrayList<String> coleccion = new ArrayList<String>();
