@@ -48,7 +48,9 @@ programación Java.
 
 - carpeta "PracticasJava" | Status: Complet 
 - archivo README	| Status: Modified
-- carpeta "CollectionsAndArrays" |Status: In Progress
+- carpeta "CollectionsAndArrays" 
+    - Peliculas | status: In Reviews
+    - ListaNumeros | status: In Reviews
 - carpeta "TicTacToe" | Status: In Progress
         
 
