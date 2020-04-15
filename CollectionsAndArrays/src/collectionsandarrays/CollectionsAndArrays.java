@@ -19,6 +19,7 @@ public class CollectionsAndArrays {
     public static void main(String[] args) {
         Peliculas plist = new Peliculas("Duro de matar");
         plist.AddMovie("Arma Mortal");
+        plist.AddMovie("Agentes Shield");
         plist.verLista();
         ListaNumeros otraLista = new ListaNumeros(1,100);
         otraLista.tour();                
