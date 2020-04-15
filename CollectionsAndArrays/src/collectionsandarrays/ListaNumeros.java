@@ -22,14 +22,28 @@ public class ListaNumeros {
     int [] t = new int [endtour];
     int contenido = starttour;
      for(int indice = 0;indice<=101;indice ++){
-            if(contenido < endtour){
+            if(contenido <= endtour){
                 t[indice] = contenido; 
                 System.out.println(t[indice]);                
-                contenido ++;
-                
-            }
-            System.out.println(t[indice] + t[indice+1]);
-        }     
+                contenido ++;                   
+            }            
+        }  
+     System.out.println(sumar(t));
+     System.out.println(promedio(t));
     }
     
-}
+    public int sumar(int [] contenidoT){
+        int suma =0;
+        for(int i = 0;i<contenidoT.length;i++){
+            suma = contenidoT[i]+suma;
+        }
+        return suma;
+    }
+    public int promedio(int [] c){
+        int prom = 0;
+        prom = sumar(c)/endtour;
+        return prom;
+    }
+   }
+    
+

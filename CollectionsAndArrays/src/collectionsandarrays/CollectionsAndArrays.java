@@ -17,20 +17,10 @@ public class CollectionsAndArrays {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Pelicula pUno = new Pelicula("Duro de matar");
-        Pelicula pDos = new Pelicula("Arma Mortal");
-        String inside = "";
-        inside = pUno.getName();
-        mostrarLista(inside);
-        inside = pDos.getName();
-        mostrarLista(inside);
+        Peliculas plist = new Peliculas("Duro de matar");
+        plist.AddMovie("Arma Mortal");
+        plist.verLista();
         ListaNumeros otraLista = new ListaNumeros(1,100);
-        otraLista.tour();        
-        
-    }
-    public static void mostrarLista(String nameIn){
-        ArrayList<String> coleccion = new ArrayList<String>();
-        coleccion.add(nameIn);
-        System.out.println(coleccion);
+        otraLista.tour();                
     }
 }
