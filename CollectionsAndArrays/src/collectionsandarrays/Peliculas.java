@@ -20,8 +20,7 @@ public class Peliculas {
     lista.add(title);
     }
     public Peliculas(){
-        System.out.println("ingrese nombre de pelicula");
-        System.out.println("con el metodo AddMovie");
+        System.out.println("ingrese nombre de pelicula\n");
     }
     public void verLista(){
          System.out.println(lista);
@@ -30,7 +29,8 @@ public class Peliculas {
         return lista.get(0);
     }
     
-    public boolean AddMovie(String newMovie){
+    public boolean AddMovie(String newMovie){ 
+        
         return lista.add(newMovie);
     }
     
