@@ -23,8 +23,7 @@ public class ListaNumeros {
     int contenido = starttour;
      for(int indice = 0;indice<=101;indice ++){
             if(contenido <= endtour){
-                t[indice] = contenido; 
-                System.out.println(t[indice]);                
+                t[indice] = contenido;                               
                 contenido ++;                   
             }            
         }  
