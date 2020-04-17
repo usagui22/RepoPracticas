@@ -22,16 +22,16 @@ public class CollectionsAndArrays {
         ingresarDatos();
     }
     private static void ingresarDatos(){
-        Peliculas plist = new Peliculas();               
+        Peliculas movielist = new Peliculas();               
         String entrada ="";
         Scanner entradaScanner = new Scanner(System.in);       
         entrada = entradaScanner.nextLine();
         while(!entrada.equals("end")){                                             
                 System.out.println("guardando");
-                plist.AddMovie(entrada);                            
+                movielist.AddMovie(entrada);                            
                 entrada = entradaScanner.nextLine();
         }
-        plist.verLista();
+        movielist.verLista();
     }
    
 }
