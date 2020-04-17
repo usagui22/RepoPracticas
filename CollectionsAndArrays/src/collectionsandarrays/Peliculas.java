@@ -16,22 +16,21 @@ public class Peliculas {
     private ArrayList<String> lista = new ArrayList<String>();
     
     public Peliculas(String newMovie){
-    title = newMovie;
-    lista.add(title);
+        title = newMovie;
+        lista.add(title);
     }
     public Peliculas(){
-        System.out.println("ingrese nombre de pelicula\n");
+    //    System.out.println("ingrese nombre de pelicula\n");
     }
     public void verLista(){
          System.out.println(lista);
     }
-    public String getFirstName(){
+    public String FirstName(){
         return lista.get(0);
     }
     
-    public boolean AddMovie(String newMovie){ 
-        
-        return lista.add(newMovie);
+    public void AddMovie(String newMovie){         
+        lista.add(newMovie);
     }
     
 }
