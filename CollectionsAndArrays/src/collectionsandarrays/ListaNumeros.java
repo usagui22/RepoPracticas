@@ -14,33 +14,33 @@ public class ListaNumeros {
     private int endtour;
     
     public ListaNumeros(int in, int fi){
-    starttour = in;
-    endtour = fi;
+        starttour = in;
+        endtour = fi;
     }
     
     public void tour(){
-    int [] t = new int [endtour];
-    int contenido = starttour;
-     for(int indice = 0;indice<=101;indice ++){
-            if(contenido <= endtour){
-                t[indice] = contenido;                               
-                contenido ++;                   
-            }            
-        }  
-     System.out.println(sumar(t));
-     System.out.println(promedio(t));
+        int [] t = new int [endtour];
+        int contenido = starttour;
+            for(int indice = 0;indice<=101;indice ++){
+                if(contenido <= endtour){
+                    t[indice] = contenido;                               
+                    contenido ++;                   
+                }            
+            }  
+        System.out.println(sumar(t));
+        System.out.println(promedio(t));
     }
     
     public int sumar(int [] contenidoT){
         int suma =0;
-        for(int i = 0;i<contenidoT.length;i++){
-            suma = contenidoT[i]+suma;
-        }
+            for(int i = 0;i<contenidoT.length;i++){
+                suma = contenidoT[i]+suma;
+            }
         return suma;
     }
-    public int promedio(int [] c){
-        int prom = 0;
-        prom = sumar(c)/endtour;
+    public double promedio(int [] c){
+        double prom = 0;
+            prom = (double)sumar(c)/endtour;
         return prom;
     }
    }
