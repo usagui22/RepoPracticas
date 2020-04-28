@@ -10,26 +10,15 @@ package tictactoe;
  * @author Usagui
  */
 public class Jugadas {
-    private int posActHor;
-    private int posActVer;
+    private int posicionTablero;    
+    private Tablero t;
     
-    
-    public Jugadas(int pos1, int pos2){
-        posActHor = pos1;
-        posActVer = pos2;
-    }
-    public void jugaCentral(){
-        Coordenada posCentral = new Coordenada(posActHor, posActVer);
-        if(posCentral.getCoordenadaX()==1){
-            if(posCentral.getCoordenadaY()==1){
-                contraJugadaCentral();
-            }
-        }
+    public Jugadas(int posActual){        
+        if(posActual <1 || posActual>9){
+            System.out.println("Introduce una posicion valida para el tablero");
+        }else{
+            posicionTablero = posActual;
+        }                                  
     }
     
-    public void contraJugadaCentral(){
-        int posHor;
-        int posVer;
-        
-    }
 }
