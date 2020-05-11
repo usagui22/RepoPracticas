@@ -16,6 +16,24 @@ public class Elementos_Programacion {
      */
     public static void main(String[] args) {
         Calculadora prueba = new Calculadora(3,5);
+        prueba.suma();
+        prueba.mostrarResultado();
+        prueba.resta();
+        prueba.mostrarResultado();
+        prueba.multiplicacion();
+        prueba.mostrarResultado();
+        prueba.division();
+        prueba.mostrarResultado();
+        prueba.coseno(33);
+        prueba.mostrarResultado();
+        prueba.seno(66);
+        prueba.mostrarResultado();
+        prueba.tangente(98);
+        prueba.mostrarResultado();
+        prueba.logaritmo10(15);
+        prueba.mostrarResultado();
+        prueba.logaritmoE(36);
+        prueba.mostrarResultado();
         prueba.potencia();        
         prueba.mostrarResultado();        
     }
