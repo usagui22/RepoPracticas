@@ -23,12 +23,12 @@ public class Elementos_Programacion {
         System.out.println("Presione start para empezar");
         bandera = entradaScanner.next();        
         if(bandera.equals("start")==true){
-        mostrarOperaciones();          
-        System.out.println("Ingrese que operacion va a realizar:");  
-        int opcion = entradaScanner.nextInt();
-        seleccionarOperacion(opcion,entradaScanner);                                                                
+            mostrarOperaciones();          
+            System.out.println("Ingrese que operacion va a realizar:");  
+            int opcion = entradaScanner.nextInt();
+            seleccionarOperacion(opcion,entradaScanner);                                                                
         }else{
-        System.out.println("Cerrando...");
+            System.out.println("Cerrando...");
         }
     }
     public static void mostrarOperaciones(){
