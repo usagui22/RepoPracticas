@@ -24,11 +24,14 @@ public class TicTacToe {
         do{        
         System.out.println("Seleccione ubicacion para primera jugada:");
         Scanner entrada = new Scanner(System.in);
-        int entradaJuego=entrada.nextInt();                                                                              
-        tab.jugada(entradaJuego);
-        tab.mostrarTablero();            
-        tab.contraJugada();
-        tab.mostrarTablero();            
+        int entradaJuego=entrada.nextInt();  
+        
+        if(turno %2 == 0){
+            tab.jugada(entradaJuego);                               
+            tab.contraJugada();
+            tab.mostrarTablero();            
+            turno++;
+        }        
         }while(turno <= 3);   
     }
     
