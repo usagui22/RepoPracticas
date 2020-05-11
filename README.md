@@ -49,9 +49,13 @@ programación Java.
 - carpeta "PracticasJava" | Status: Complet 
 - archivo README	| Status: Modified
 - carpeta "CollectionsAndArrays" 
-    - Peliculas | status: In Reviews
-    - ListaNumeros | status: In Reviews
-- carpeta "TicTacToe" | Status: In Progress
+    - Peliculas | status: Complet
+    - ListaNumeros | status: Complet
+- carpeta "TicTacToe" | Status: With Bugs
+- carpeta "TicTacToe-v2" | Status: In Progress
+	![Logica de TicTacToe version 2](/imagenes/LogicaTicTacToe-v2.png)
+- carpeta "Elementos_Programacion" | Status: In Progress
+    - 10 ejercicios de Asignacion en metodos de una Calculadora con librerias Math
         
 
 
