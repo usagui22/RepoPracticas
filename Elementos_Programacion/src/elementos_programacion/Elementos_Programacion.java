@@ -15,7 +15,7 @@ public class Elementos_Programacion {
 
     /**
      * @param args the command line arguments
-     */
+     
     public static void main(String[] args) {        
         Scanner entradaScanner = new Scanner(System.in);
         String bandera;
@@ -42,7 +42,7 @@ public class Elementos_Programacion {
         System.out.println("7. Logaritmo de Base e");
         System.out.println("8. coseno de un angulo");
         System.out.println("9. seno de un angulo");
-        System.out.println("10. tangente de un angulo");        
+        System.out.println("10. tangente de un angulo");       
     }
     public static void seleccionarOperacion(int operacion, Scanner nuevaEntrada){         
         Calculadora prueba;        
