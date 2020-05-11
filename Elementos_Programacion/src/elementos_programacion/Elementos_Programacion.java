@@ -15,7 +15,7 @@ public class Elementos_Programacion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Calculadora prueba = new Calculadora(3,5);
+        Calculadora prueba = new Calculadora(3,5);        
         prueba.suma();
         prueba.mostrarResultado();
         prueba.resta();
