@@ -55,7 +55,7 @@ public class Calculadora {
     }
     public void tangente(){
         resultado = (int)Math.tan(valor3);
-    }
+    }       
     public void mostrarResultado(){
         System.out.println("El resultado es:" + resultado);
     }      
